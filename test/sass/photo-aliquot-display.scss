@@ -1,0 +1,12 @@
+@import '../../lib/photo-aliquot-display';
+
+body{
+  margin: 0;
+}
+
+.wrap{
+  width: 50rem;
+  height: 50rem;
+  @include aliquot(6,'div > span','../img/1.jpg');
+}
+

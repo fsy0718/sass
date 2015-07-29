@@ -1,0 +1,30 @@
+
+@mixin aliquot($count,$selector,$img:''){
+  $parsed: selector-parse($selector);
+  $first-simple-selector: nth(nth($parsed,1),1);
+  $last-simple-selector: nth(nth($parsed,1),-1);
+  @at-root #{$first-simple-selector}{
+    width: 100%;
+    display: flex;
+    height: 100%;
+  }
+
+  #{$selector}{
+    width: calc(1/#{$count}*100%);
+    height: 100%;
+    background-image: url(#{$img});
+    background-size: $count*100% 100%;
+  }
+
+  @for $i from 1 through $count{
+    #{$selector}:nth-of-type(#{$i}){
+      @if 1-$i == 0 {
+        background-position: 0 0;
+      }@else{
+        background-position: (1-$i)*100% 0;
+      }
+
+    }
+  }
+
+}

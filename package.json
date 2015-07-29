@@ -1,0 +1,24 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "some usefull sass mixin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/fsy0718/sass.git"
+  },
+  "keywords": [
+    "sass",
+    "mixin"
+  ],
+  "author": "fsy0718 <fsy_study@yeah.net>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.8.1",
+    "gulp": "^3.9.0",
+    "gulp-ruby-sass": "^1.0.5"
+  }
+}

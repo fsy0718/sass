@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  background: #f4f4f4; }
+
+ul {
+  list-style: none outside none; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  width: 30rem;
+  margin: 1rem auto; }
+
+ul > li {
+  margin-bottom: 1rem; }
+  ul > li:nth-last-child(n+7), ul > li:nth-last-child(n+7) ~ li {
+    border: solid 1px red; }
+  ul > li:nth-last-child(-n+5):first-child, ul > li:nth-last-child(-n+5):first-child ~ li {
+    background: #fff; }
+  ul > li:nth-last-child(n+6):nth-last-child(-n+7):first-child, ul > li:nth-last-child(n+6):nth-last-child(-n+7):first-child ~ li {
+    background: rgba(125, 12, 1, 0.4); }
+  ul > li:nth-last-child(7):first-child, ul > li:nth-last-child(7):first-child ~ li {
+    font-size: 2rem;
+    text-align: center; }

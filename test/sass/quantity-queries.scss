@@ -1,0 +1,31 @@
+@import '../../lib/quantity-queries';
+
+body{
+  margin: 0;
+  background: #f4f4f4;
+}
+ul{
+  list-style: none outside none;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  width: 30rem;
+  margin: 1rem auto;
+}
+ul > li {
+  margin-bottom: 1rem;
+  @include at-least(7){
+    border: solid 1px red;
+  }
+  @include at-most(5){
+    background: #fff;
+  }
+  @include between(6,7){
+    background: rgba(125,12,1,0.4);
+  }
+  @include exactly(7){
+    font-size: 2rem;
+    text-align: center;
+  }
+}
